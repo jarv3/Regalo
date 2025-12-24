@@ -121,7 +121,7 @@ if "regalo_abierto" not in st.session_state:
     st.session_state.regalo_abierto = False
 
 # ---------- Encabezado con regalo ----------
-st.title("🎁 GiftBox – Tu app personal navideña")
+st.title("🎁 Tu app personal navideña")
 st.caption("Organiza hábitos, gratitud y metas; visualiza tu resumen anual.")
 
 c1, c2, c3 = st.columns([1,1,1])
@@ -297,13 +297,6 @@ with tab_resumen:
             draw.text((x, y), line, fill=(70, 60, 50), font=font_body)
             y += sample_h + line_spacing
 
-        # Footer
-        y += 20
-        draw.line([(padding, y), (W - padding, y)], fill=(200, 190, 170), width=2)
-        y += 10
-        footer = "Generado por GiftBox – 🎄 Feliz Navidad 2025"
-        draw.text((x, y), footer, fill=(109, 76, 65), font=font_footer)
-
         # Exportar a buffer
         buf = io.BytesIO()
         img.save(buf, format="PNG")
@@ -318,4 +311,5 @@ with tab_resumen:
         file_name="resumen_anual.png",
         mime="image/png"
     )
+
 
