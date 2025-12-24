@@ -241,7 +241,7 @@ with tab_resumen:
 {notas}
 
 ---
-> Generado por GiftBox – ¡Feliz Navidad y un gran {anio + 1}! 🎄
+> Generado por Analytics Team – ¡Feliz Navidad y un gran {anio + 1}! 🎄
 """
     st.markdown(md)
 
@@ -318,3 +318,4 @@ with tab_resumen:
         file_name="resumen_anual.png",
         mime="image/png"
     )
+
