@@ -180,7 +180,7 @@ with tab_resumen:
         # Título
         x = padding
         y = padding
-        draw.text((x, y), f"Resumen anual {anio}", font=font_title, fill=text_color)
+        draw.text((x, y), f"¡Descubre todo lo que puedes lograr!", font=font_title, fill=text_color)
         y += title_height + 20
 
         # Cuerpo
@@ -209,3 +209,4 @@ with tab_resumen:
         file_name="resumen_anual.png",
         mime="image/png"
     )
+
