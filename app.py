@@ -206,7 +206,8 @@ with tab_resumen:
     st.download_button(
         label="🖼️ Guardar imagen del resumen (PNG)",
         data=png_buffer,
-        file_name="resumen_anual.png",
+        file_name="resumen_metas.png",
         mime="image/png"
     )
+
 
